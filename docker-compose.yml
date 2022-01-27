@@ -6,8 +6,8 @@ services:
     volumes:
       - .:/boxee
     ports:
-      - "80:80"
-      - "8000:8000"
+      - "3380:80"
+      - "38000:8000"
     environment:
       - DATABASE_URL=postgres://postgres:password@db:5432/boxee
       - ENVIRONMENT=local
